@@ -1,45 +1,90 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0f172a;
+  background: #ffffff;
   color: white;
 }
+
 
 /* HERO */
 .hero {
   text-align: center;
   padding: 40px;
-  background: #111827;
-}
-
-.logo {
-  width: 120px;
-}
-
-.presentacion img {
-  width: 180px;
-  border-radius: 10px;
-  margin-top: 10px;
+  background: #ffffff;
 }
 
 /* NAVBAR */
 .navbar {
+  background: #3535dd;
+  padding: 12px;
   display: flex;
-  background: #1f2937;
-  padding: 10px;
   gap: 15px;
-  align-items: center;
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
-  padding: 8px;
+  padding: 8px 12px;
+  border-radius: 5px;
 }
 
 .navbar a:hover {
-  background: #374151;
-  border-radius: 5px;
+  background: #3a547e;
+}
+
+/* CONTENEDOR */
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* CARD PRINCIPAL */
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 10px 25px rgb(0, 8, 255);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+/* TITULOS */
+h1 {
+  color: #d5aa00;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #3b14a9;
+  margin-top: 20px;
+}
+
+h3 {
+  color: #d5aa00;
+  margin-top: 15px;
+}
+
+
+/* TEXTO */
+p {
+  color: #000000;
+  line-height: 1.6;
+}
+
+/* LISTA */
+ul {
+  padding-left: 20px;
+  color: #000000;
+}
+
+li {
+  margin-bottom: 8px;
 }
 
 /* DROPDOWN */
@@ -58,7 +103,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background: #111827;
+  background: #003ec5;
   min-width: 180px;
 }
 
@@ -69,4 +114,69 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* ===== EVIDENCIAS ===== */
+
+.evidencia {
+  margin-bottom: 30px;
+}
+
+.evidencia-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: 2px solid #3b14a9;
+  object-fit: contain;
+}
+.link-evidencia {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #3535dd;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.link-evidencia:hover {
+  background: #3a547e;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #d5aa00;
+  margin: 30px 0;
+}
+
+.student-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgb(0, 8, 255);
+  margin-bottom: 25px;
+}
+
+/* Encabezado del estudiante */
+.student-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+/* Icono */
+.student-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Nombre */
+.student-header h2 {
+  margin: 0;
+  color: #3b14a9;
 }
